@@ -1,0 +1,289 @@
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project
+$ pwd
+/e/sample_project
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project
+$ git clone https://github.com/lblakshmi96/jujube.git
+Cloning into 'jujube'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project
+$ cd jujube
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ pwd
+/e/sample_project/jujube
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ touch file 1
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ ls
+1  README.md  file
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ rm 1
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ ls
+README.md  file
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ rm file1
+rm: cannot remove 'file1': No such file or directory
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ rm file
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ ls
+README.md
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ touch file1
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ ls
+README.md  file1
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ touch file2
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ ls
+README.md  file1  file2
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ touch file3
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ ls
+README.md  file1  file2  file3
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ cat > file1
+hi
+heloo
+rdfhdhf
+dstrfbtshasjhgjhhfggsaxjjjgfshdgsd
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ cat file1
+hi
+heloo
+rdfhdhf
+dstrfbtshasjhgjhhfggsaxjjjgfshdgsd
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ cat > file2
+hello
+dhbfffsvbs
+theanaylaize
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ cat file2
+hello
+dhbfffsvbs
+theanaylaize
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ cat > file3
+heloo
+uma is a great
+lakshmi is a intiligent
+vinod is very very good boy
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ cat file3
+heloo
+uma is a great
+lakshmi is a intiligent
+vinod is very very good boy
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ ls
+README.md  file1  file2  file3
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ ls -ltr
+total 4
+-rw-r--r-- 1 Dell 197121 25 Feb 22 23:28 README.md
+-rw-r--r-- 1 Dell 197121 52 Feb 22 23:42 file1
+-rw-r--r-- 1 Dell 197121 30 Feb 22 23:45 file2
+-rw-r--r-- 1 Dell 197121 73 Feb 22 23:47 file3
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ cat file1 file2 file3
+hi
+heloo
+rdfhdhf
+dstrfbtshasjhgjhhfggsaxjjjgfshdgsd
+hello
+dhbfffsvbs
+theanaylaize
+heloo
+uma is a great
+lakshmi is a intiligent
+vinod is very very good boy
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$
+
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1
+        file2
+        file3
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git add file1
+warning: in the working copy of 'file1', LF will be replaced by CRLF the next time Git touches it
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file2
+        file3
+
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git log
+commit 264f495f687e910c1c945be070bb5f2dce13e3dc (HEAD -> main, origin/main, origin/HEAD)
+Author: lblakshmi96 <108423694+lblakshmi96@users.noreply.github.com>
+Date:   Wed Feb 22 23:23:54 2023 +0530
+
+    Initial commit
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git commit -m "added file1"
+[main 24dfd7c] added file1
+ 1 file changed, 4 insertions(+)
+ create mode 100644 file1
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git log
+commit 24dfd7c62a6e1a7331e566a01c03618eb17923d6 (HEAD -> main)
+Author: lakshmi <lblakshmi96@gmail.com>
+Date:   Wed Feb 22 23:57:46 2023 +0530
+
+    added file1
+
+commit 264f495f687e910c1c945be070bb5f2dce13e3dc (origin/main, origin/HEAD)
+Author: lblakshmi96 <108423694+lblakshmi96@users.noreply.github.com>
+Date:   Wed Feb 22 23:23:54 2023 +0530
+
+    Initial commit
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git push origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 313 bytes | 313.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/lblakshmi96/jujube.git
+   264f495..24dfd7c  main -> main
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git add file2
+warning: in the working copy of 'file2', LF will be replaced by CRLF the next time Git touches it
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file2
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file3
+
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git add file3
+warning: in the working copy of 'file3', LF will be replaced by CRLF the next time Git touches it
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file2
+        new file:   file3
+
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git log
+commit 24dfd7c62a6e1a7331e566a01c03618eb17923d6 (HEAD -> main, origin/main, origin/HEAD)
+Author: lakshmi <lblakshmi96@gmail.com>
+Date:   Wed Feb 22 23:57:46 2023 +0530
+
+    added file1
+
+commit 264f495f687e910c1c945be070bb5f2dce13e3dc
+Author: lblakshmi96 <108423694+lblakshmi96@users.noreply.github.com>
+Date:   Wed Feb 22 23:23:54 2023 +0530
+
+    Initial commit
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git commit -m "added file2, added file3"
+[main 8c0d3a7] added file2, added file3
+ 2 files changed, 7 insertions(+)
+ create mode 100644 file2
+ create mode 100644 file3
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git push orign
+fatal: 'orign' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 421 bytes | 421.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/lblakshmi96/jujube.git
+   24dfd7c..8c0d3a7  main -> main
+
+Dell@DESKTOP-JIF421A MINGW64 /e/sample_project/jujube (main)
+$
